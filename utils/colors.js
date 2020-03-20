@@ -9,3 +9,7 @@ export const light = '#f8f9fa';
 export const dark = '#343a40';
 export const white = 'white';
 export const transparent = 'transparent';
+export const body = '#212529';
+export const muted = '#6c757d';
+export const black50 = 'rgba(0,0,0,0.5)';
+export const white50 = 'rgba(255,255,255,0.5)';
