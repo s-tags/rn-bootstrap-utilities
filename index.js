@@ -5,3 +5,4 @@ export * from './resources/position';
 export * from './resources/display';
 export * from './resources/flex';
 export * from './resources/text';
+export * from './resources/spacing';
