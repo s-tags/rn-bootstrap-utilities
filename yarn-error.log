@@ -1,0 +1,34 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Sam\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Users\Sam\AppData\Local\Microsoft\WindowsApps;C:\Users\Sam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sam\AppData\Local\Android\Sdk\platform-tools;C:\Users\Sam\AppData\Local\Yarn\bin;C:\Users\Sam\AppData\Local\GitHubDesktop\bin;C:\Users\Sam\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.1
+
+Node version: 
+  10.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+
+npm manifest: 
+  {
+    "name": "rn-bootstrap-utilities",
+    "version": "0.0.1",
+    "description": "Boostrap Utilities for React Native",
+    "main": "index.js",
+    "author": "sam tags <stags.js@protonmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

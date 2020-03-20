@@ -1,0 +1,24 @@
+{
+	"extends": ["eslint:recommended", "prettier"],
+	"rules": {
+		"no-console": "warn"
+	},
+	"plugins": ["import"],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"arrowFunctions": true
+		}
+	},
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true
+	},
+	"settings": {},
+	"ignorePatterns": [],
+	"globals": {
+		"window": true
+	}
+}
