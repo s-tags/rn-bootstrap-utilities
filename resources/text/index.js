@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
 	textUppercase: { textTransform: 'uppercase' },
 	textCapitalize: { textTransform: 'capitalize' },
 	/** font weight and italics */
-	fontWeightBold: { fontWeight: 700 },
+	fontWeightBold: { fontWeight: '700' },
 	fontWeightBolder: { fontWeight: 'bold' },
-	fontWeightLight: { fontWeight: 300 },
-	fontWeightLighter: { fontWeight: 100 },
+	fontWeightLight: { fontWeight: '300' },
+	fontWeightLighter: { fontWeight: '100' },
 	fontItalic: { fontStyle: 'italic' },
 
 	/** text decoration */
