@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './index.module.scss';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Layout = () => {
 	return (
@@ -12,7 +13,9 @@ const Layout = () => {
 			>
 				<nav className="flex-shrink-0">Navbar</nav>
 				<div className="flex-grow-1 d-flex">
-					<aside className="flex-shrink-0">Aside</aside>
+					<aside className="flex-shrink-0">
+						<Sidebar />
+					</aside>
 					<div className="d-flex flex-grow-1">
 						<section className={`${style.content} flex-grow-1`}>
 							Main Content
@@ -24,7 +27,9 @@ const Layout = () => {
 
 			<div className={`${style.mobile} d-block d-lg-none`}>
 				<nav>Navbar</nav>
-				<aside>Aside</aside>
+				<aside>
+					<Sidebar />
+				</aside>
 				<section className={style.content}>Main Content</section>
 			</div>
 		</div>

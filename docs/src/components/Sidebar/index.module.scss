@@ -1,0 +1,13 @@
+.sidebar {
+	li {
+		display: block;
+		font-size: 18px;
+		color: rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+		transition: color ease-in 0.1s;
+
+		&:hover {
+			color: rgba(65, 65, 68, 0.9);
+		}
+	}
+}
