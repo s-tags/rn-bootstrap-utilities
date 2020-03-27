@@ -2,8 +2,9 @@ import React from 'react';
 import style from './index.module.scss';
 import Sidebar from '../Sidebar/Sidebar';
 import Navbar from '../Navbar';
+import { node, oneOfType, arrayOf } from 'prop-types';
 
-const Layout = () => {
+const Layout = ({ children }) => {
 	return (
 		<div className={style.layout}>
 			<div
@@ -21,7 +22,7 @@ const Layout = () => {
 					</aside>
 					<div className="d-flex flex-grow-1">
 						<section className={`${style.content} flex-grow-1`}>
-							Main Content
+							{children}
 						</section>
 						<aside className="flex-shrink-0">Aside Right</aside>
 					</div>
@@ -37,6 +38,10 @@ const Layout = () => {
 			</div>
 		</div>
 	);
+};
+
+Layout.propTypes = {
+	children: oneOfType([node, arrayOf(node)])
 };
 
 export default Layout;
