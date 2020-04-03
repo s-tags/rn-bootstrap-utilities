@@ -6,7 +6,7 @@ import { node, oneOfType, arrayOf } from 'prop-types';
 
 const Layout = ({ children }) => {
 	return (
-		<div className={`${style.layout} d-lg-flex flex-column d-none`}>
+		<div className={`${style.layout} d-flex flex-column`}>
 			<nav className={`flex-shrink-0 ${style.navLayout}`}>
 				<Navbar />
 			</nav>

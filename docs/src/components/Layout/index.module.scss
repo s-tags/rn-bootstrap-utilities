@@ -9,6 +9,22 @@ $asideWidth: 230px;
 		width: $asideWidth;
 	}
 
+	.content {
+		background: #fdfdfd;
+	}
+
+	@media (max-width: 1200px) {
+		.rightSidebar {
+			display: none;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.content {
+			padding-right: $asideWidth;
+		}
+	}
+
 	@media (min-width: 960px) {
 		.navLayout {
 			top: 0;

@@ -1,0 +1,28 @@
+.colors {
+	h1 {
+		font-size: 3em;
+		font-weight: lighter;
+	}
+
+	p {
+		font-size: 1.45em;
+		font-weight: lighter;
+	}
+
+	header {
+		font-size: 2em;
+	}
+
+	.sampleContainer {
+		border-width: 2px !important;
+	}
+
+	.codeContainer {
+		background: #dee2e6;
+	}
+
+	.copy:hover {
+		background: #007bff;
+		color: white;
+	}
+}
