@@ -1,9 +1,12 @@
+$navHeight: 72px;
+$asideWidth: 230px;
+
 .layout {
 	.desktop {
 		height: 100vh;
 
 		aside {
-			width: 230px;
+			width: $asideWidth;
 		}
 
 		.content {
@@ -14,6 +17,31 @@
 	.mobile {
 		.content {
 			background-color: #0099cc;
+		}
+	}
+
+	@media (min-width: 960px) {
+		.navLayout {
+			top: 0;
+			width: 100%;
+			position: fixed;
+		}
+
+		.leftSidebar,
+		.rightSidebar {
+			position: fixed;
+			margin-top: $navHeight;
+			background: #fdfdfd;
+			height: 100vh;
+		}
+
+		.rightSidebar {
+			right: 0;
+		}
+
+		.content {
+			padding-left: $asideWidth;
+			padding-top: $navHeight;
 		}
 	}
 }

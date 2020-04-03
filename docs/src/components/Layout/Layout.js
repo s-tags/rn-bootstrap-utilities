@@ -13,18 +13,20 @@ const Layout = ({ children }) => {
         ${style.desktop}
       `}
 			>
-				<nav className="flex-shrink-0">
+				<nav className={`flex-shrink-0 ${style.navLayout}`}>
 					<Navbar />
 				</nav>
 				<div className="flex-grow-1 d-flex">
-					<aside className="flex-shrink-0">
+					<aside className={`flex-shrink-0 ${style.leftSidebar}`}>
 						<Sidebar />
 					</aside>
 					<div className="d-flex flex-grow-1">
 						<section className={`${style.content} flex-grow-1`}>
 							{children}
 						</section>
-						<aside className="flex-shrink-0">Aside Right</aside>
+						<aside className={`flex-shrink-0 ${style.rightSidebar}`}>
+							Aside Right
+						</aside>
 					</div>
 				</div>
 			</div>
