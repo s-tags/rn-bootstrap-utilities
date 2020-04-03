@@ -12,7 +12,7 @@ const Homepage = () => {
 
 			<div className="flex-container">
 				<div>
-					<h1>Bootstrap Native</h1>
+					<h1 className="home-h1">Bootstrap Native</h1>
 					<p>
 						Bringing the world's most popular front-end library to the native
 						world.
@@ -28,7 +28,7 @@ const Homepage = () => {
 					</div>
 				</div>
 				<div>
-					<img src={Logo} alt="Bootstrap" />
+					<img className="home-img" src={Logo} alt="Bootstrap" />
 				</div>
 			</div>
 

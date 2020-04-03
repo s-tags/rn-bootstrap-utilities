@@ -13,7 +13,7 @@
 	padding: 50px;
 }
 
-h1 {
+.home-h1 {
 	color: #7952b3;
 	font-size: 60px;
 }
@@ -47,7 +47,7 @@ h1 {
 	color: white;
 }
 
-img {
+.home-img {
 	margin-left: 150px;
 	width: 450px;
 	height: 450px;
@@ -67,7 +67,7 @@ img {
 	font-size: 18px;
 	background-color: whitesmoke;
 }
-button {
+.home-button {
 	border: 1px solid #007bff;
 	border-radius: 5px;
 	background: inherit;
@@ -76,7 +76,7 @@ button {
 	text-align: center;
 	margin-top: 50px;
 }
-button:hover {
+.home-button:hover {
 	background: #007bff;
 	color: white;
 }
@@ -100,11 +100,12 @@ button:hover {
 	text-decoration: none;
 	color: #212529;
 }
-li {
+.page-footer li {
 	display: inline-block;
 	font-weight: bolder;
 }
-li:nth-of-type(2) {
+
+.page-footer li:nth-of-type(2) {
 	margin-left: 5px;
 }
 
