@@ -2,22 +2,11 @@ $navHeight: 72px;
 $asideWidth: 230px;
 
 .layout {
-	.desktop {
-		height: 100vh;
+	background: #fdfdfd;
+	height: 100vh;
 
-		aside {
-			width: $asideWidth;
-		}
-
-		.content {
-			background-color: #0099cc;
-		}
-	}
-
-	.mobile {
-		.content {
-			background-color: #0099cc;
-		}
+	aside {
+		width: $asideWidth;
 	}
 
 	@media (min-width: 960px) {
@@ -27,11 +16,14 @@ $asideWidth: 230px;
 			position: fixed;
 		}
 
+		.leftSidebar {
+			border-right: 1px solid #e5e5e5;
+		}
+
 		.leftSidebar,
 		.rightSidebar {
 			position: fixed;
 			margin-top: $navHeight;
-			background: #fdfdfd;
 			height: 100vh;
 		}
 
