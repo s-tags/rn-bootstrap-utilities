@@ -5,6 +5,7 @@ import Homepage from '../pages/Homepage/HomePage';
 import Borders from '../pages/Documentation/Utilities/Borders/Borders';
 import Colors from '../pages/Documentation/Utilities/Colors';
 import Visibility from '../pages/Documentation/Utilities/Visibility';
+import Position from '../pages/Documentation/Utilities/Position';
 
 const Routes = () => {
 	return (
@@ -15,6 +16,7 @@ const Routes = () => {
 					<Route path="/docs/utilities/borders" component={Borders} />
 					<Route path="/docs/utilities/colors" component={Colors} />
 					<Route path="/docs/utilities/visibility" component={Visibility} />
+					<Route path="/docs/utilities/position" component={Position} />
 				</Layout>
 			</Switch>
 		</BrowserRouter>
