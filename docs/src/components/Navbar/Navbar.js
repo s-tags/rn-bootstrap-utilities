@@ -1,10 +1,12 @@
 import React from 'react';
 import style from './index.module.scss';
+import { Link } from 'react-router-dom';
+
 function Navbar() {
 	return (
 		<div className={`${style.navbar} p-3 d-flex justify-content-between`}>
 			<div className="d-flex align-items-center">
-				<a className="mr-2" href="https://getbootstrap.com/">
+				<Link className="mr-2" to="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="40"
@@ -24,7 +26,7 @@ function Navbar() {
 							d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"
 						></path>
 					</svg>
-				</a>
+				</Link>
 				<ul className="m-0 p-0">
 					<li className={`d-inline p-2 ${style.active}`}>Home</li>
 					<li className="d-inline p-2">Documentation</li>

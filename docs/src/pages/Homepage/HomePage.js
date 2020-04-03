@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Logo from './logo.png';
 import './index.css';
+import { Link, Redirect } from 'react-router-dom';
 
 const Homepage = () => {
+	const [redirectToDocs, setRedirectToDocs] = useState(false);
+
+	if (redirectToDocs)
+		return <Redirect push to="/docs/utilities/getting-started" />;
+
 	return (
 		<div>
 			<div className="my-NavBar">
@@ -24,7 +30,12 @@ const Homepage = () => {
 						cross-platform components.
 					</p>
 					<div>
-						<button className="btn-started">Get Started</button>
+						<button
+							onClick={() => setRedirectToDocs(true)}
+							className="btn-started"
+						>
+							Get Started
+						</button>
 					</div>
 				</div>
 				<div>
@@ -44,9 +55,9 @@ const Homepage = () => {
 							</p>
 							<code>$ npm install rn-bootstrap-utilities</code>
 							<div className="mt-4">
-								<a className="btn btn-outline-primary" href="#">
+								<Link className="btn btn-outline-primary" to={{ pathname: '' }}>
 									Read Installation
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -61,9 +72,12 @@ const Homepage = () => {
 									application.
 								</p>
 								<div>
-									<a className="btn btn-outline-primary" href="#">
+									<Link
+										className="btn btn-outline-primary"
+										to={{ pathname: '/docs/utilities/getting-started' }}
+									>
 										Read Documentation
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -98,9 +112,9 @@ const Homepage = () => {
 					>
 						GitHub
 					</a>
-					<a className=" font-weight-bold ml-3" href="#">
+					<Link className=" font-weight-bold ml-3" to={{ pathname: '' }}>
 						About
-					</a>
+					</Link>
 					<p>
 						Inspired by bootstrap team and contributors. Built and maintain by{' '}
 						<a className="maintainer" href="https://github.com/s-tags">
@@ -108,7 +122,11 @@ const Homepage = () => {
 						</a>
 						.
 						<br />
-						Contributors and backers are much appreciated.
+						Many thanks to{' '}
+						<a className="maintainer" href="https://github.com/goni002">
+							goni002
+						</a>{' '}
+						for contributing to the documentation.
 					</p>
 					<p>Code Licensed MIT.</p>
 				</div>
