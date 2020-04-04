@@ -131,16 +131,16 @@ function Borders() {
 				<p>Change the border color using utilities built on our theme colors.</p>
 			</div>
 				<div className={style.bdUtilites}>
-					<div className=" p-4 mx-0 mt-2">
+					<div className=" p-4 mx-0 mt-2 d-flex">
 						<span className={`${style.borderType} border border-primary`}></span>
 						<span className={`${style.borderType} border border-secondary ml-4`}></span>
-						<span className={`${style.borderType} border border-sucess ml-4`}></span>
+						<span className={`${style.borderType} border border-success ml-4`}></span>
 						<span className={`${style.borderType} border border-danger ml-4`}></span>
 						<span className={`${style.borderType} border border-warning ml-4`}></span>
 						<span className={`${style.borderType} border border-info ml-4`}></span>
 						<span className={`${style.borderType} border border-light ml-4`}></span>
 						<span className={`${style.borderType} border border-dark ml-4`}></span>
-						<span className={`${style.borderType} border border-white mt-2`}></span>
+						<span className={`${style.borderType} border border-white ml-4`}></span>
 					</div>	
 			
 				</div>
@@ -167,7 +167,7 @@ function Borders() {
 					<div>
 						<code className="text-info">{`<View `}</code>
 						<code className="text-primary">{`style={`}</code>
-						<code className="text-danger">{`border borderSucess`}</code>
+						<code className="text-danger">{`border borderSuccess`}</code>
 						<code className="text-primary">{`}>`}</code>
 						<code className="text-info">{`</View>`}</code>
 					</div>
