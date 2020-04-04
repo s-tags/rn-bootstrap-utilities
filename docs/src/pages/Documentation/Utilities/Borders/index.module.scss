@@ -2,8 +2,40 @@
 	font-size: 3em;
 	font-weight: lighter;
 }
-
-.sample {
+.paragraph {
 	font-size: 1.45em;
 	font-weight: lighter;
+}
+.bdUtilites{
+	border: 1px solid whitesmoke;
+	border-width: .2em;
+	box-sizing: border-box;
+	background: white;
+}
+
+.bdClipboard{
+	box-sizing: border-box;
+	background: whitesmoke;
+	padding: 30px;
+}
+.copy{
+	float: right;
+	color: #818a91;
+}
+.copy:hover {
+	background: #007bff;
+	color: white;
+}
+.borderType{
+	display: inline-block;
+	background:#bcc0c4;
+	height: 70px;
+	width: 70px;
+}
+.borderSubtractive{
+	display: inline-block;
+	background:#bcc0c4;
+	border-color: #007bff !important;
+	height: 70px;
+	width: 70px;
 }
