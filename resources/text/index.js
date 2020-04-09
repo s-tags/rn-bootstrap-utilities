@@ -13,12 +13,13 @@ const styles = StyleSheet.create({
 	/** font weight and italics */
 	fontWeightBold: { fontWeight: '700' },
 	fontWeightBolder: { fontWeight: 'bold' },
+	fontWeightNormal: { fontWeight: '400' },
 	fontWeightLight: { fontWeight: '300' },
 	fontWeightLighter: { fontWeight: '100' },
 	fontItalic: { fontStyle: 'italic' },
 
 	/** text decoration */
-	textDecorationNone: { textDecorationLine: 'none' }
+	textDecorationNone: { textDecorationLine: 'none' },
 });
 
 export const {
@@ -31,8 +32,9 @@ export const {
 	textCapitalize,
 	fontWeightBold,
 	fontWeightBolder,
+	fontWeightNormal,
 	fontWeightLight,
 	fontWeightLighter,
 	fontItalic,
-	textDecorationNone
+	textDecorationNone,
 } = styles;
