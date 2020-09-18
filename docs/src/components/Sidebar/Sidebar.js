@@ -28,21 +28,21 @@ export default function Sidebar() {
 				<Link to="/docs/utilities/display">Display</Link>
 			</li>
 
-			<li className="py-1">
+			{/* <li className="py-1">
 				<Link to="/docs/utilities/flex">Flex</Link>
-			</li>
+			</li> */}
 
 			<li className="py-1">
 				<Link to="/docs/utilities/position">Position</Link>
 			</li>
 
-			<li className="py-1">
+			{/* <li className="py-1">
 				<Link to="/docs/utilities/sizing">Sizing</Link>
-			</li>
+			</li> */}
 
-			<li className="py-1">
+			{/* <li className="py-1">
 				<Link to="/docs/utilities/spacing">Spacing</Link>
-			</li>
+			</li> */}
 
 			<li className="py-1">
 				<Link to="/docs/utilities/text">Text</Link>
