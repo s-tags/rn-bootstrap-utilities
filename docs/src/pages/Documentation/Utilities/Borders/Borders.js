@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './index.module.scss';
+import Phone from '../../../../components/Phone';
 
 function Borders() {
 	return (
@@ -20,12 +21,14 @@ function Borders() {
 				<h1 className={style.subheader}>Additive</h1>
 			</div>
 			<div className={style.bdUtilites}>
-				<div className=" p-4 mx-0 mt-2">
-					<span className={`${style.borderType} border`}></span>
-					<span className={`${style.borderType} border-top ml-4`}></span>
-					<span className={`${style.borderType} border-right ml-4`}></span>
-					<span className={`${style.borderType} border-bottom ml-4`}></span>
-					<span className={`${style.borderType} border-left ml-4`}></span>
+				<div className="d-flex justify-content-center p-4">
+					<Phone>
+						<div className={`${style.borderType} border`}></div>
+						<div className={`${style.borderType} border-top mt-4`}></div>
+						<div className={`${style.borderType} border-right mt-4`}></div>
+						<div className={`${style.borderType} border-bottom mt-4`}></div>
+						<div className={`${style.borderType} border-left mt-4`}></div>
+					</Phone>
 				</div>
 			</div>
 			<div>
@@ -72,20 +75,24 @@ function Borders() {
 				<h1 className={style.subheader}>Subtractive</h1>
 			</div>
 			<div className={style.bdUtilites}>
-				<div className=" p-4 mx-0 mt-2">
-					<span className={`${style.borderSubtractive} border border-0`}></span>
-					<span
-						className={`${style.borderSubtractive} border border-top-0 ml-4`}
-					></span>
-					<span
-						className={`${style.borderSubtractive} border border-right-0 ml-4`}
-					></span>
-					<span
-						className={`${style.borderSubtractive} border border-bottom-0 ml-4`}
-					></span>
-					<span
-						className={`${style.borderSubtractive} border border-left-0 ml-4`}
-					></span>
+				<div className="d-flex justify-content-center p-4">
+					<Phone>
+						<span
+							className={`${style.borderSubtractive} border border-0`}
+						></span>
+						<span
+							className={`${style.borderSubtractive} border border-top-0 mt-4`}
+						></span>
+						<span
+							className={`${style.borderSubtractive} border border-right-0 mt-4`}
+						></span>
+						<span
+							className={`${style.borderSubtractive} border border-bottom-0 mt-4`}
+						></span>
+						<span
+							className={`${style.borderSubtractive} border border-left-0 mt-4`}
+						></span>
+					</Phone>
 				</div>
 			</div>
 			<div>
@@ -136,32 +143,41 @@ function Borders() {
 			</div>
 
 			<div className={style.bdUtilites}>
-				<div className=" p-4 mx-0 mt-2 d-flex">
-					<span className={`${style.borderType} border border-primary`}></span>
-					<span
-						className={`${style.borderType} border border-secondary ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-success ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-danger ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-warning ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-info ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-light ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-dark ml-4`}
-					></span>
-					<span
-						className={`${style.borderType} border border-white ml-4`}
-					></span>
+				<div className="d-flex justify-content-center p-4">
+					<Phone>
+						<div className="d-flex justify-content-between mb-4">
+							<span
+								className={`${style.borderType} border border-primary mr-4`}
+							></span>
+							<span
+								className={`${style.borderType} border border-secondary`}
+							></span>
+						</div>
+						<div className="d-flex justify-content-between mb-4">
+							<span
+								className={`${style.borderType} border border-success mr-4`}
+							></span>
+							<span
+								className={`${style.borderType} border border-danger`}
+							></span>
+						</div>
+
+						<div className="d-flex justify-content-between mb-4">
+							<span
+								className={`${style.borderType} border border-warning mr-4`}
+							></span>
+							<span className={`${style.borderType} border border-info`}></span>
+						</div>
+
+						<div className="d-flex justify-content-between mb-4">
+							<span
+								className={`${style.borderType} border border-light mr-4`}
+							></span>
+							<span className={`${style.borderType} border border-dark`}></span>
+						</div>
+
+						<span className={`${style.borderType} border border-white`}></span>
+					</Phone>
 				</div>
 
 				<div>
@@ -242,14 +258,24 @@ function Borders() {
 				<p>Modify border corners easily by adding.</p>
 			</div>
 			<div className={style.bdUtilites}>
-				<div className="p-4 mx-0 mt-2">
-					<span className={`${style.borderType} rounded`}></span>
-					<span className={`${style.borderType} rounded-top ml-4`}></span>
-					<span className={`${style.borderType} rounded-right ml-4`}></span>
-					<span className={`${style.borderType} rounded-left ml-4`}></span>
-					<span className={`${style.borderType} rounded-bottom ml-4`}></span>
-					<span className={`${style.borderType} rounded-circle ml-4`}></span>
-					<span className={`${style.borderType} rounded-0 ml-4`}></span>
+				<div className="p-4 d-flex justify-content-center">
+					<Phone>
+						<div className="d-flex mt-4">
+							<span className={`${style.borderType} rounded mr-4`}></span>
+							<span className={`${style.borderType} rounded-top`}></span>
+						</div>
+						<div className="mt-4">
+							<span className={`${style.borderType} rounded-right mr-4`}></span>
+							<span className={`${style.borderType} rounded-left`}></span>
+						</div>
+						<div className="mt-4">
+							<span
+								className={`${style.borderType} rounded-bottom mr-4`}
+							></span>
+							<span className={`${style.borderType} rounded-circle`}></span>
+						</div>
+						<span className={`${style.borderType} rounded-0 mt-4`}></span>
+					</Phone>
 				</div>
 			</div>
 			<div>
@@ -312,9 +338,11 @@ function Borders() {
 				<p>Use roundedLg or roundedSm for larger or smaller border radius.</p>
 			</div>
 			<div className={style.bdUtilites}>
-				<div className="p-4 mx-0 mt-2">
-					<span className={`${style.borderType} rounded-sm`}></span>
-					<span className={`${style.borderType} rounded-lg ml-4`}></span>
+				<div className="d-flex justify-content-center p-4">
+					<Phone>
+						<span className={`${style.borderType} rounded-sm`}></span>
+						<span className={`${style.borderType} rounded-lg mt-4`}></span>
+					</Phone>
 				</div>
 			</div>
 			<div>
