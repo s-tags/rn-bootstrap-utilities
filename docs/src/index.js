@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import Routes from './routes';
+import { Initializer } from '@buoyant/react';
+import { initialState, whitelist } from './config/buoyant.config';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Routes />
+		<Initializer retain whitelist={whitelist} value={initialState}>
+			<Routes />
+		</Initializer>
 	</React.StrictMode>,
 	document.getElementById('root')
 );

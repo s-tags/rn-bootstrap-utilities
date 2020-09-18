@@ -1,8 +1,11 @@
 import React from 'react';
 import style from './index.module.scss';
 import { Link } from 'react-router-dom';
+import { useBuoyantState, setBuoyantState } from '@buoyant/react';
 
 function Navbar() {
+	const activeNavigation = useBuoyantState('activeNavigation');
+
 	return (
 		<div className={`${style.navbar} p-3 d-flex justify-content-between`}>
 			<div className="d-flex align-items-center">
@@ -28,8 +31,29 @@ function Navbar() {
 					</svg>
 				</Link>
 				<ul className="m-0 p-0">
-					<li className={`d-inline p-2 ${style.active}`}>Home</li>
-					<li className="d-inline p-2">Documentation</li>
+					<li
+						onClick={() => setBuoyantState('activeNavigation', 'Home')}
+						className={`d-inline ${
+							activeNavigation === 'Home' ? style.active : ''
+						}`}
+					>
+						<Link className="text-white p-2" to="/">
+							Home
+						</Link>
+					</li>
+					<li
+						onClick={() => setBuoyantState('activeNavigation', 'Documentation')}
+						className={`d-inline ${
+							activeNavigation === 'Documentation' ? style.active : ''
+						}`}
+					>
+						<Link
+							className="text-white p-2"
+							to="/docs/utilities/getting-started"
+						>
+							Documentation
+						</Link>
+					</li>
 				</ul>
 			</div>
 			<div className="d-flex">
