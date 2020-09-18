@@ -1,4 +1,5 @@
 import React from 'react';
+import Phone from '../../../../components/Phone/Phone';
 import style from './index.module.scss';
 
 function Text() {
@@ -20,8 +21,9 @@ function Text() {
 			<div>Easily align text component with text alignment utility.</div>
 
 			<div className={`${style.codeContainer} p-1 mt-4`}>
-				<div className="bg-white p-4 text-justify">{ipsum}</div>
-
+				<div className="bg-white d-flex justify-content-center p-4 text-justify">
+					<Phone>{ipsum}</Phone>
+				</div>
 				<div className="d-flex justify-content-between align-self-center p-4">
 					<div>
 						<code className="text-info">{`<Text `}</code>
@@ -38,10 +40,14 @@ function Text() {
 			</div>
 
 			<div className={`${style.codeContainer} p-1 mt-4`}>
-				<div className="bg-white p-4 text-left">
-					<div>textLeft</div>
-					<div className="text-center">textCenter</div>
-					<div className="text-right">textRight</div>
+				<div className="bg-white justify-content-center d-flex p-4 text-left">
+					<Phone>
+						<div className="w-100">
+							<div>textLeft</div>
+							<div className="text-center">textCenter</div>
+							<div className="text-right">textRight</div>
+						</div>
+					</Phone>
 				</div>
 
 				<div className="p-4">
@@ -81,10 +87,14 @@ function Text() {
 			<div>Transform text in components with text capitalization utility.</div>
 
 			<div className={`${style.codeContainer} p-1 mt-4`}>
-				<div className="bg-white p-4 text-left">
-					<div className="text-lowercase">textLowerCase</div>
-					<div className="text-uppercase my-4">textUpperCase</div>
-					<div className="text-capitalize">textCapitalize</div>
+				<div className="bg-white p-4 d-flex justify-content-center text-left">
+					<Phone>
+						<div className="w-100 text-center">
+							<div className="text-lowercase">textLowerCase</div>
+							<div className="text-uppercase my-4">textUpperCase</div>
+							<div className="text-capitalize">textCapitalize</div>
+						</div>
+					</Phone>
 				</div>
 
 				<div className="p-4">
@@ -124,13 +134,17 @@ function Text() {
 			<div>Quickly change the weight (boldness) of text or italicize text.</div>
 
 			<div className={`${style.codeContainer} p-1 mt-3`}>
-				<div className="bg-white p-4 text-left">
-					<div className="font-weight-bold mb-3">fontWeightBold</div>
-					<div className="font-weight-bolder mb-3">fontWeightBolder</div>
-					<div className="font-weight-normal mb-3">fontWeightNormal</div>
-					<div className="font-weight-light mb-3">fontWeightLight</div>
-					<div className="font-weight-lighter mb-3">fontWeightLighter</div>
-					<div className="font-italic">fontItalic</div>
+				<div className="bg-white p-4 d-flex justify-content-center text-left">
+					<Phone>
+						<div className="w-100 text-center">
+							<div className="font-weight-bold mb-3">fontWeightBold</div>
+							<div className="font-weight-bolder mb-3">fontWeightBolder</div>
+							<div className="font-weight-normal mb-3">fontWeightNormal</div>
+							<div className="font-weight-light mb-3">fontWeightLight</div>
+							<div className="font-weight-lighter mb-3">fontWeightLighter</div>
+							<div className="font-italic">fontItalic</div>
+						</div>
+					</Phone>
 				</div>
 
 				<div className="p-4">
@@ -194,8 +208,10 @@ function Text() {
 			<div>Remove text underline by using Text decoration utility.</div>
 
 			<div className={`${style.codeContainer} p-1 mt-3`}>
-				<div className="bg-white p-4 text-left">
-					<div>textDecorationNone</div>
+				<div className="bg-white p-4 d-flex justify-content-center text-left">
+					<Phone>
+						<div className="text-center">textDecorationNone</div>
+					</Phone>
 				</div>
 				<div className="d-flex justify-content-between align-self-center p-4">
 					<div>
