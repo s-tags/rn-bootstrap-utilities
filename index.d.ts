@@ -1,16 +1,16 @@
 // Borders
 
 interface BorderAttributes {
-	borderWidth: number;
-	borderColor: string;
+	borderWidth: any;
+	borderColor: any;
 }
 
 interface RoundedAttributes {
-	borderRadius: number;
-	borderTopLeftRadius: number;
-	borderTopRightRadius: number;
-	borderBottomRightRadius: number;
-	borderBottomLeftRadius: number;
+	borderRadius: any;
+	borderTopLeftRadius: any;
+	borderTopRightRadius: any;
+	borderBottomRightRadius: any;
+	borderBottomLeftRadius: any;
 }
 
 export const border: BorderAttributes;
@@ -44,11 +44,11 @@ export const roundedLg: Partial<RoundedAttributes>;
 
 // colors
 interface TextAttributes {
-	color: string;
+	color: any;
 }
 
 interface BackgroundColorAttributes {
-	backgroundColor: string;
+	backgroundColor: any;
 }
 
 export const textPrimary: TextAttributes;
@@ -77,40 +77,40 @@ export const bgTransparent: BackgroundColorAttributes;
 
 // display
 export interface dFlex {
-	display: string;
+	display: any;
 }
 export interface dNone {
-	display: string;
+	display: any;
 }
 
 // flex
 interface FlexDirectionAttributes {
-	flexDirection: string;
+	flexDirection: any;
 }
 
 interface JustifyContentAttributes {
-	justifyContent: string;
+	justifyContent: any;
 }
 
 interface AlignItemsAttributes {
-	alignItems: string;
+	alignItems: any;
 }
 
 interface AlignSelfAttributes {
-	alignSelf: string;
+	alignSelf: any;
 }
 
 interface AlignContentAttributes {
-	alignContent: string;
+	alignContent: any;
 }
 
 interface FlexGrowAndShrinkAttributes {
-	flexGrow: number;
-	flexShrink: number;
+	flexGrow: any;
+	flexShrink: any;
 }
 
 interface FlexWrapAttributes {
-	flexWrap: string;
+	flexWrap: any;
 }
 
 export const flexRow: FlexDirectionAttributes;
@@ -133,9 +133,9 @@ export const alignSelfCenter: AlignSelfAttributes;
 export const alignSelfBaseline: AlignSelfAttributes;
 export const alignSelfStretch: AlignSelfAttributes;
 export interface flexFill {
-	flexGrow: number;
-	flexShrink: number;
-	flexBasis: string;
+	flexGrow: any;
+	flexShrink: any;
+	flexBasis: any;
 }
 export const flexGrow1: Partial<FlexGrowAndShrinkAttributes>;
 export const flexGrow0: Partial<FlexGrowAndShrinkAttributes>;
@@ -154,28 +154,28 @@ export const alignContentStretch: AlignContentAttributes;
 // position
 
 export interface positionAbsolute {
-	position: string;
+	position: any;
 }
 
 export interface positionRelative {
-	position: string;
+	position: any;
 }
 
 interface SpacingAttributes {
-	margin: number;
-	marginTop: number;
-	marginRight: number;
-	marginBottom: number;
-	marginLeft: number;
-	marginVertical: number;
-	marginHorizontal: number;
-	padding: number;
-	paddingTop: number;
-	paddingRight: number;
-	paddingBottom: number;
-	paddingLeft: number;
-	paddingVertical: number;
-	paddingHorizontal: number;
+	margin: any;
+	marginTop: any;
+	marginRight: any;
+	marginBottom: any;
+	marginLeft: any;
+	marginVertical: any;
+	marginHorizontal: any;
+	padding: any;
+	paddingTop: any;
+	paddingRight: any;
+	paddingBottom: any;
+	paddingLeft: any;
+	paddingVertical: any;
+	paddingHorizontal: any;
 }
 
 // spacing
@@ -278,15 +278,15 @@ export const px5: Partial<SpacingAttributes>;
 // text
 
 interface TextAlignAttribute {
-	textAlign: string;
+	textAlign: any;
 }
 
 interface TextTransformAttribute {
-	textTransform: string;
+	textTransform: any;
 }
 
 interface FontWeightAttribute {
-	fontWeight: string;
+	fontWeight: any;
 }
 
 export const textLeft: TextAlignAttribute;
@@ -302,13 +302,13 @@ export const fontWeightLight: FontWeightAttribute;
 export const fontWeightLighter: FontWeightAttribute;
 export const fontItalic: FontWeightAttribute;
 export interface textDecorationNone {
-	fontStyle: string;
+	fontStyle: any;
 }
 
 export interface visible {
-	opacity: number;
+	opacity: any;
 }
 
 export interface invisible {
-	opacity: number;
+	opacity: any;
 }
