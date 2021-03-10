@@ -8,6 +8,7 @@ import Visibility from '../pages/Documentation/Utilities/Visibility';
 import Position from '../pages/Documentation/Utilities/Position';
 import Display from '../pages/Documentation/Utilities/Display';
 import Text from '../pages/Documentation/Utilities/Text';
+import Spacing from '../pages/Documentation/Utilities/Spacing';
 
 const Routes = () => {
 	return (
@@ -15,6 +16,7 @@ const Routes = () => {
 			<Switch>
 				<Route exact component={Homepage} path="/" />
 				<Layout>
+					<Route path="/docs/utilities/spacing" component={Spacing} />
 					<Route path="/docs/utilities/borders" component={Borders} />
 					<Route path="/docs/utilities/colors" component={Colors} />
 					<Route path="/docs/utilities/visibility" component={Visibility} />
