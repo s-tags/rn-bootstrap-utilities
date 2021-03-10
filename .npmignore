@@ -1,0 +1,6 @@
+node_modules
+docs
+.eslintrc.json
+.prettierrc
+.yarn-error.log
+yarn.lock
